@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+   width: 100%;
 }
 
 .logo {
@@ -39,4 +39,42 @@
 
 .read-the-docs {
   color: #888;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+main {
+  padding-top: 80px; /* Add top padding to prevent content from being hidden under the fixed header */
+}
+
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.home, .about, .projects, .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h1, .about h1, .projects h1, .contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home p, .about p, .projects p, .contact p {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 800px;
 }
