@@ -1,0 +1,99 @@
+#main {
+  font-family: 'Patrick Hand', cursive;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello, .world {
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4em;
+  transition-timing-function: ease-out;
+}
+
+.hello {
+  display: flex;
+  padding-top: 1%;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeInUp 1s forwards;
+}
+
+.letter:nth-child(1) { animation-delay: 0.1s; }
+.letter:nth-child(2) { animation-delay: 0.2s; }
+.letter:nth-child(3) { animation-delay: 0.3s; }
+.letter:nth-child(4) { animation-delay: 0.4s; }
+.letter:nth-child(5) { animation-delay: 0.5s; }
+
+.world {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: fadeInUp 1s forwards 0.6s;
+  transition-timing-function: ease-out;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-me {
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.animated-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.animated-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.typing {
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 1px;
+  background-color: #333;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+.animated-heading .typing-cursor,
+.animated-text .typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 1px;
+  background-color: #333;
+  animation: blink 1s steps(1) infinite;
+}

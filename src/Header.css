@@ -5,6 +5,7 @@
   }
   
   .header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,6 +13,8 @@
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgb(51, 51, 51);
     width: 100%;
+    font-family: 'Patrick Hand', cursive;
+    z-index: 1000;
   }
   
   .logo-container {
