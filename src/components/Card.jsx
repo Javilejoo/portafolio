@@ -3,10 +3,12 @@ import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import { FaHtml5, FaCss3, FaJs, FaReact,FaAngular } from 'react-icons/fa'; // Importa iconos de Font Awesome
 import { SiMongodb, SiMysql, SiVite, SiExpress } from 'react-icons/si';
 import { DiNodejs } from 'react-icons/di';
+import { CardActionArea } from '@mui/material';
 
-function CustomCard({ image, title, description, technologies }) {
+function CustomCard({ image, title, description, technologies, link}) {
   return (
     <Card sx={{ maxWidth: 345, margin: '20px', fontFamily: 'Patrick Hand, cursive' }}>
+      <CardActionArea href={link} target="_blank" rel="noopener noreferrer">
       <CardMedia
         component="img"
         height="140"
@@ -63,6 +65,7 @@ function CustomCard({ image, title, description, technologies }) {
           })}
         </div>
       </CardContent>
+      </CardActionArea>
     </Card>
   );
 }
