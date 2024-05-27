@@ -1,0 +1,22 @@
+.projects {
+  padding: 40px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-family: 'Patrick Hand', cursive;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Agrega espacio entre las tarjetas */
+}
+
+.card {
+  flex: 1; /* Hace que todas las tarjetas tengan el mismo tamaño */
+  margin: 10px; /* Reducido el margen para mejorar el espacio entre las tarjetas */
+  max-width: 300px; /* Define el ancho máximo de las tarjetas */
+}

@@ -13,6 +13,9 @@ function App() {
       <section id="About">
         <About />
       </section>
+      <section id="Projects">
+        <Projects />
+      </section>
     </main>
   </div>
 );
