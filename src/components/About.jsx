@@ -45,8 +45,8 @@ function About() {
             return;
           }
           j = 0;
-          timer = setTimeout(type, 200);
-        }, 200);
+          timer = setTimeout(type, 75);
+        }, 100);
       } else {
         timer = setTimeout(type, speed);
       }

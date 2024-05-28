@@ -1,6 +1,7 @@
 .projects {
   padding: 40px;
   text-align: center;
+  padding-top: 80px;
 }
 
 .projects h2 {
@@ -19,4 +20,9 @@
   flex: 1; /* Hace que todas las tarjetas tengan el mismo tamaño */
   margin: 10px; /* Reducido el margen para mejorar el espacio entre las tarjetas */
   max-width: 300px; /* Define el ancho máximo de las tarjetas */
+}
+
+#contact {
+  padding-top: 100px;
+  /* Puedes ajustar la cantidad de padding según lo necesites */
 }
