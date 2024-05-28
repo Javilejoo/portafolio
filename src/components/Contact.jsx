@@ -1,12 +1,23 @@
 import React from 'react';
-import { IconButton, Typography } from '@mui/material';
+import { Button,IconButton, Typography } from '@mui/material';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import '../Projects.css';
 
 function Contact() {
   const handleRedirect = (url) => {
     window.open(url, '_blank');
   };
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      alert('Correo electrónico copiado al portapapeles');
+    }).catch(err => {
+      console.error('Error al copiar al portapapeles: ', err);
+    });
+  };
+
+  const email = "javilejo02@gmail.com"; 
 
   return (
     <section  id="contact">
@@ -31,6 +42,14 @@ function Contact() {
           <FaLinkedin style={{ marginRight: '5px' }} />
           <Typography>LINKEDIN</Typography>
         </IconButton>
+        <Button
+          variant="contained"
+          style={{ backgroundColor: '#6c757d', color: '#fff' }} // Botón gris
+          startIcon={<ContentCopyIcon />}
+          onClick={() => copyToClipboard(email)}
+        >
+          Copy Email
+        </Button>
       </div>
     </section>
   );

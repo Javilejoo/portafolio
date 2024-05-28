@@ -8,7 +8,7 @@ function About() {
   useEffect(() => {
     const texts = [
       "Hey there! 👋",
-      "I'm Javier, a 4th-year IT Engineering student at the Universidad del Valle de Guatemala. 🏫",
+      "I'm Javier, a 4th-year Computer Science & IT Engineering student at the Universidad del Valle de Guatemala. 🏫",
       "My love for technology started with a simple'Hello World'. Ever since, I've been hooked! 💻",
       "I'm passionate about code, fueled by a love for problem-solving and a desire to learn new things. Building the future, one line of code at a time 🚀"
     ];
