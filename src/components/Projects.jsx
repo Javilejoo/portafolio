@@ -48,7 +48,9 @@ function Projects() {
 
   return (
     <section className="projects" id="projects">
-      <h1>Projects</h1>
+        <div style={{ display: 'flex', justifyContent: 'center'}}>
+        <h1> Projects</h1>
+        </div>
       <div className="cards-container">
         {projects.map((project, index) => (
           <CustomCard

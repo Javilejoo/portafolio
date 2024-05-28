@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography,  CardActionArea } from '@mui/material';
 import { FaHtml5, FaCss3, FaJs, FaReact,FaAngular } from 'react-icons/fa'; 
 import { SiMongodb, SiMysql, SiVite, SiExpress } from 'react-icons/si';
 import { DiNodejs } from 'react-icons/di';
-import { CardActionArea } from '@mui/material';
+
 
 function CustomCard({ image, title, description, technologies, link}) {
   return (
