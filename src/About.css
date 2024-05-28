@@ -98,3 +98,6 @@
   animation: blink 1s steps(1) infinite;
 }
 
+.large-text .typing {
+  font-size: 2rem; /* Ajusta este valor según tu preferencia */
+}

@@ -13,16 +13,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Agrega espacio entre las tarjetas */
+  gap: 20px; 
+  margin-left: 10%;
 }
 
+
 .card {
-  flex: 1; /* Hace que todas las tarjetas tengan el mismo tamaño */
-  margin: 10px; /* Reducido el margen para mejorar el espacio entre las tarjetas */
-  max-width: 300px; /* Define el ancho máximo de las tarjetas */
+  flex: 1 1 300px; 
+  margin: 10px; 
+  max-width: 300px; 
+  min-width: 250px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 #contact {
   padding-top: 70px;
-  /* Puedes ajustar la cantidad de padding según lo necesites */
 }

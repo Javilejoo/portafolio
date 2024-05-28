@@ -74,15 +74,15 @@ function About() {
           <span className="typing">{displayedText[0]}</span>
           {!isComplete && <span className="typing-cursor"></span>}
         </h1>
-        <p className="animated-text">
+        <p className="animated-text large-text">
           <span className="typing">{displayedText[1]}</span>
           {!isComplete && <span className="typing-cursor"></span>}
         </p>
-        <p className="animated-text">
+        <p className="animated-text large-text">
           <span className="typing">{displayedText[2]}</span>
           {!isComplete && <span className="typing-cursor"></span>}
         </p>
-        <p className="animated-text">
+        <p className="animated-text large-text">
           <span className="typing">{displayedText[3]}</span>
           {!isComplete && <span className="typing-cursor"></span>}
         </p>
